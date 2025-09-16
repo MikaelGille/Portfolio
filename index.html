@@ -5,214 +5,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mikael Gille</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="image/logo-small.png" type="image/x-icon">
+    <link rel="icon" href="images/logo-small-dark.png" type="image/x-icon">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-
-    <button id="toTop" title="Tillbaka till toppen">↑</button>
-
-
-    <section class="home-container">
-        <div class="home-logo">
-            <img src="image/logo-big.png" alt="personal-logo">
+    <header id="navigation">
+        <div class="logo">
+            <a href="#navigation"><img src="images/logo-big-dark.png" alt="Logga"></a>
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#skills">Färdigheter</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-        <div class="home-info">
-
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="#about-anchor">Om mig</a></li>
-                    <li><a href="#portfolio-anchor">Portfolio</a></li>
-                    <li><a href="#footer-anchor">Kontakt</a></li>
-                </ul>
-            </nav>
-
-            <div class="home-text">
-                <h1>Välkommen!</h1> <br>
+    <section class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/profile-picture.png" alt="Porträtt av mig">
+            </div>
+            <div class="about-text">
+                <h2>Om mig</h2>
                 <p>
-                   Mitt mål är att utveckla innovativa lösningar som kombinerar 
-                   estetik med funktionalitet. Här hittar du några av de projekt jag har arbetat på, mina färdigheter inom programmering 
-                   och design samt information om hur du kan kontakta mig.<br> <br>
-                   Just nu söker jag praktik för att få möjlighet att tillämpa mina kunskaper i en professionell miljö, utvecklas vidare 
-                   och bidra till spännande projekt. Hör gärna av dig om du vill veta mer eller har en möjlighet som kan passa!
+                    Jag heter Mikael Gille och studerar just nu webbutveckling på 
+                    TUC Yrkeshögskola, där jag är inne på min tredje termin. 
+                    Jag brinner framför allt för frontend, UX/UI och att optimera 
+                    webbplatser för bättre användarupplevelse och SEO, samtidigt 
+                    som jag gärna vill utveckla min kompetens inom backend. Som en 
+                    kreativ problemlösare med öga för detaljer och god struktur 
+                    arbetar jag metodiskt för att skapa moderna och responsiva lösningar.
                 </p>
-            </div>
-
-            <div class="home-icons">
-                <a href="https://github.com/MikaelGille" target="_blank"><img src="image/github.png" alt="github-logo"></a>
-                <a href="https://www.linkedin.com/in/mikael-gille-0456b4151" target="_blank"><img src="image/linkedin.png" alt="linkedin-logo"></a>
-                <a href="https://www.facebook.com/mikael.gille/" target="_blank"><img src="image/facebook.png" alt=facebook-logo></a>
-                <a href="https://drive.google.com/file/d/1QCQQRW6AguZpR7nCSYUfb7Du-qp-krSz/view?usp=sharing" target="_blank"><img src="image/cv.png" alt="cv-logo"></a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <div id="about-anchor"></div>
-
-
-    
-    <section class="about-container">
-        <div class="about-pic">
-            <img src="image/profile-picture.png" alt="Profile picture">
-        </div>
-
-        <div class="about-text">
-
-            <h2>Om mig</h2> <br>
-            <p>
-                Jag heter Mikael Gille, är 33 år gammal och bosatt i Stockholm. 
-                Jag är en strukturerad, effektiv och lättsam person med ett intresse
-                för webbutveckling och IT-sektorn. För närvarande studerarar jag på TUC Yrkeshögskola.<br> <br>
-                Tidigare har jag arbetat i detaljhandeln i 9,5 år, varav 6,5 år som butikschef. Där utvecklade jag starka ledarskaps- och 
-                samarbetsförmågor, med fokus på struktur, effektivitet och en positiv arbetsmiljö. <br> <br>
-                På fritiden gillar jag att spendera tid med familj och vänner, promenera i naturen, följa Djurgårdens fotboll samt lyssna på 
-                ljudböcker och se på TV-serier.
-            </p> <br>
-
-            <h2>Färdigheter</h2> <br>
-            <p>
-                Under den tid jag har studerat som webbutvecklingsstudent har jag fått en solid grund i webbutveckling och 
-                programmering. Jag har arbetat med HTML och CSS för att skapa strukturerade och responsiva webbplatser, samt använt 
-                grundläggande JavaScript för att lägga till interaktivitet. Jag har också introducerats till C# och dess användning 
-                inom backend-utveckling. 
-            </p>
-
-            <div class="about-logos">
-                <img src="image/html.png" alt="html-logo">
-                <img src="image/css.png" alt="css-logo">
-                <img src="image/javascript.png" alt="js-logo">
-                <img src="image/c-sharp.png" alt="c-sharp-logo">
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <div class="anchor-wrapper">
-        <hr id="portfolio-anchor">
-    </div>
-
-
-    
-    <section class="portfolio-container">
-        <h1 class="portfolio-header">Portfolio</h1>
-
-        <div class="project">
-
-            <div class="text">
-                <h3>Memoryspel</h3> <br>
-                <p>
-                    Detta projekt är ett interaktivt memoryspel där målet är att para ihop bilder genom att klicka på korten. 
-                    HTML och CSS tillhandahölls av läraren, medan JavaScript implementerades av oss studenter för att skapa 
-                    funktionalitet och interaktivitet. Under projektets gång fördes en loggbok för att följa utvecklingen av projektet.
-                </p>
-
-                <a href="https://github.com/MikaelGille/Memory-Spel.git" target="_blank">GitHub</a> 
-
-                <div class="logo-wrapper">
-                    <img src="image/html.png" alt="html-logo">
-                    <img src="image/css.png" alt="css-logo">
-                    <img src="image/javascript.png" alt="js-logo">
-                </div>
-
-            </div>
-
-            <div class="image-wrapper">
-                <a href="https://www.codebygille.se/Memoryspel/index.html" target="_blank"><img src="image/memory.png" alt="Memory-img"></a>
-            </div>
-
-        </div>
-
-        <div class="project">
-            <div class="text">
-                <h3>Golfklubb</h3> <br>
-                <p>
-                    I vårt grupprojekt skapade vi en hemsida för en golfklubb med HTML och CSS. Syftet var att lära oss arbeta 
-                    agilt genom Scrum. Vi delade upp projektet i sprintar och arbetade tillsammans för att definiera krav, utveckla 
-                    funktioner och implementera en responsiv design. Vi använde dagliga stand-ups och sprintavslut för att säkerställa 
-                    god kommunikation och effektivt framdrift, och lärde oss att samarbeta och anpassa oss efter förändrade behov under 
-                    projektets gång.
-                </p>
-
-                <a href="https://github.com/MikaelGille/Golfklubb.git" target="_blank">GitHub</a> 
-
-                <div class="logo-wrapper">
-                    <img src="image/html.png" alt="html-logo">
-                    <img src="image/css.png" alt="css-logo">
-                </div>
-
-            </div>
-            <div class="image-wrapper">
-                <a href="https://www.codebygille.se/Grupprojekt-Golfklubb/Index.html" target="_blank"><img src="image/golfclub.png" alt="Golfklubb-img"></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="text">
-                <h3>Internets Historia</h3> <br>
-                <p>
-                    Detta projekt är en webbplats som behandlar internets historia, dess tekniska utveckling, 
-                    en inspirerande person samt agila arbetsmetoder. Webbplatsen är skapad som en del av en skoluppgift och 
-                    innehåller flera olika sidor som presenterar både faktabaserad information och personliga reflektioner.
-                </p>
-
-                <a href="https://github.com/MikaelGille/Internets-Historia.git" target="_blank">GitHub</a> 
-
-                <div class="logo-wrapper">
-                    <img src="image/html.png" alt="html-logo">
-                    <img src="image/css.png" alt="css-logo">
-                </div>
-
-            </div>
-            <div class="image-wrapper">
-                <a href="https://www.codebygille.se/Internets-historia/index.html" target="_blank"><img src="image/internet-history.png" alt="internet-history.img"></a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="text">
-                <h3>Bibliotekssystem</h3> <br>
-                <p>
-                    Detta är ett bibliotekssystem utvecklat i C# med hjälp av Entity Framework och .NET 8.0. 
-                    Programmet är ett konsolbaserat verktyg som använder en lokal SQL-databas för att hantera data om användare och böcker. 
-                    Det erbjuder ett enkelt och användarvänligt gränssnitt för smidig interaktion.
-                </p>
-
-                <a href="https://github.com/MikaelGille/LibrarySystem.git" target="_blank">GitHub</a> 
-
-                <div class="logo-wrapper">
-                    <img src="image/c-sharp.png" alt="c-sharp-logo">
-                    <img src="image/sql.png" alt="sql-logo">
-                </div>
-
-            </div>
-            <div class="image-wrapper">
-                <img src="image/librarysystem.png" alt="Memory-img">
             </div>
         </div>
     </section>
 
+    <section id="skills" class="skills">
+        <div class="skills-header">
+            <h2>Färdigheter & Verktyg</h2>
+            <p>Program och tekniker jag har arbetat med och utvecklar mina kunskaper i.</p>
+        </div>
 
-    
-    <footer id="footer-anchor" class="footer">
-        <p>
-            &copy; 2025 Mikael Gille
-            <span class="separator"></span> 
-            Telefon: 070-453 67 16
-            <span class="separator"></span> 
-            E-post: mikael.gille@gmail.com
-        </p> 
-    </footer>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-html.png" alt="HTML5">
+                </div>
+                <h3>HTML5</h3>
+                <p>Strukturerad och semantisk markup för moderna webbplatser.</p>
+            </div>
 
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-css.png" alt="CSS3">
+                </div>
+                <h3>CSS3</h3>
+                <p>Responsiv design, flexbox, grid och moderna layout-tekniker.</p>
+            </div>
 
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-javascript.png" alt="JavaScript">
+                </div>
+                <h3>JavaScript</h3>
+                <p>Dynamik, interaktioner och optimering för webben.</p>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-c-sharp.png" alt=".NET Core">
+                </div>
+                <h3>.NET Core / C#</h3>
+                <p>OOP, Razor Pages, MVC, EF Core, TDD och enhetstester.</p>
+            </div>
 
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-sql.png" alt="SQL">
+                </div>
+                <h3>SQL</h3>
+                <p>Databasmodellering, querying och prestandaoptimering.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-figma.png" alt="Figma">
+                </div>
+                <h3>Figma & UX</h3>
+                <p>Prototypning, UX-copy, tillgänglighet (WCAG) och design.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-wordpress.png" alt="WordPress">
+                </div>
+                <h3>WordPress</h3>
+                <p>Teman, optimering, SEO och innehållshantering.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="images/icon-agile.png" alt="Agila metoder">
+                </div>
+                <h3>Agila metoder</h3>
+                <p>Scrum, sprintplanering, versionshantering och samarbete.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <p>Här är några av de projekt jag har arbetat med under min utbildning och tidigare praktik.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://www.codebygille.se/Memoryspel/index.html" target="_blank" class="portfolio-image-link">
+                    <img src="images/memory.png" alt="Bild av projekt" class="portfolio-main-image">
+                </a>
+                <div class="portfolio-content">
+                    <h3>Memoryspel</h3>
+                    <p>Ett interaktivt memoryspel där spelaren parar ihop bilder 
+                        genom att vända kort. HTML och CSS tillhandahölls av läraren, 
+                        medan jag byggde funktionaliteten i JavaScript. Projektet 
+                        dokumenterades löpande i en loggbok.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-html.png" alt="HTML5" title="HTML5">
+                        <img src="images/icon-css.png" alt="CSS3" title="CSS3">
+                        <img src="images/icon-javascript.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                    <a href="https://github.com/MikaelGille/Memory-Spel.git" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://www.codebygille.se/Internets-historia/index.html" target="_blank" class="portfolio-image-link">
+                    <img src="images/internet-history.png" alt="Bild av projekt" class="portfolio-main-image">
+                </a>
+                <div class="portfolio-content">
+                    <h3>Internets Historia</h3>
+                    <p>En flersidig webbplats som presenterar internets utveckling, 
+                        en inspirerande person och agila arbetsmetoder. Webbplatsen 
+                        kombinerar fakta och reflektioner och skapades som en skoluppgift.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-html.png" alt="HTML5" title="HTML5">
+                        <img src="images/icon-css.png" alt="CSS3" title="CSS3">
+                    </div>
+                    <a href="https://github.com/MikaelGille/Internets-Historia.git" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://www.codebygille.se/Grupprojekt-Golfklubb/Index.html" target="_blank" class="portfolio-image-link">
+                    <img src="images/golfclub.png" alt="Bild av projekt" class="portfolio-main-image">
+                </a>
+                <div class="portfolio-content">
+                    <h3>Golfklubb</h3>
+                    <p>En responsiv hemsida för en golfklubb framtagen i grupp med HTML och CSS. 
+                        Projektet följde Scrum-metoden med sprintar, dagliga stand-ups och fokus 
+                        på samarbete och agil utveckling. Vi vidareutvecklade sedan golfklubbsprojektet 
+                        där vi implementerade en webbshop med MVC och SQL. Vi skapade produktbibliotek, 
+                        autentisering/inloggning, köp- och säljfunktionalitet, communityfunktioner och 
+                        grundläggande säkerhet.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-html.png" alt="HTML5" title="HTML5">
+                        <img src="images/icon-css.png" alt="CSS3" title="CSS3">
+                        <img src="images/icon-sql.png" alt="SQL" title="SQL">
+                        <img src="images/icon-c-sharp.png" alt="C#" title="C#">
+                    </div>
+                    <a href="https://github.com/EMELIEAXI/TucGolfklubbMVC.git" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/librarysystem.png" alt="Bild av projekt" class="portfolio-main-image">
+                <div class="portfolio-content">
+                    <h3>Bibliotekssystem</h3>
+                    <p>Ett konsolbaserat bibliotekssystem utvecklat i C# och 
+                        .NET 8.0 med Entity Framework. Hanterar användare och 
+                        böcker i en lokal SQL-databas och erbjuder ett enkelt, 
+                        tydligt gränssnitt.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-sql.png" alt="SQL" title="SQL">
+                        <img src="images/icon-c-sharp.png" alt="C#" title="C#">
+                    </div>
+                    <a href="https://github.com/MikaelGille/LibrarySystem.git" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://dshantverksservice.se/" target="_blank" class="portfolio-image-link">
+                    <img src="images/logo-ds.jpg" alt="DS Hantverk logga" class="portfolio-main-image">
+                </a>
+                <div class="portfolio-content">
+                    <h3>DS Hantverksservice</h3>
+                    <p>En ensidig webbplats byggd under praktik för en kund med HTML, CSS och JavaScript. 
+                        Jag följde kundens önskemål, höll regelbundna avstämningar med handledare 
+                        och ansvarade för meta-taggar samt grundläggande SEO.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-html.png" alt="HTML5" title="HTML5">
+                        <img src="images/icon-css.png" alt="CSS3" title="CSS3">
+                        <img src="images/icon-javascript.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://lgabygg.se/" target="_blank" class="portfolio-image-link">
+                    <img src="images/logo-lga.png" alt="LGA Bygg logga" class="portfolio-main-image">
+                </a>
+                <div class="portfolio-content">
+                    <h3>LGA Bygg</h3>
+                    <p>En ensidig webbplats skapad under praktik åt en kund med HTML, 
+                        CSS och JavaScript. Projektet innefattade kunduppföljningar, 
+                        anpassning efter önskemål och utveckling av en kontaktsida 
+                        samt meta-taggar och SEO-optimering.</p>
+
+                    <div class="portfolio-footer">
+                    <div class="portfolio-tech">
+                        <img src="images/icon-html.png" alt="HTML5" title="HTML5">
+                        <img src="images/icon-css.png" alt="CSS3" title="CSS3">
+                        <img src="images/icon-javascript.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+            <h3>Kontakta mig</h3>
+            <p>E-post: <a href="mailto:mikael.gille@gmail.com">mikael.gille@gmail.com</a></p>
+            <p>Telefon: <a href="tel:+46704536716">+46 70 453 67 16</a></p>
+            </div>
+
+            <div class="footer-links">
+                <div class="social-icons">
+                    <a href="https://github.com/MikaelGille" target="_blank">
+                    <img src="images/github.png" alt="GitHub" title="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikael-gille-0456b4151" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" title="LinkedIn">
+                    </a>
+                    <a href="https://drive.google.com/file/d/1nBWYya3xqm_a6f9yTFFVAqBoeQTVqzzC/view?usp=drive_link" target="_blank">
+                    <img src="images/cv.png" alt="CV på Google Drive" title="CV">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mikael Gille</p>
+        </div>
+    </footer>                          
+
+    <button id="toTop" title="Tillbaka till toppen">
+        <img src="images/arrow-up.png" alt="Pil upp">
+    </button>
 </body>
 </html>
